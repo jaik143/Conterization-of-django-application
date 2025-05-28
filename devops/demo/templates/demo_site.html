@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Containerization 101</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #232f3e;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      float: left;
+      width: 25%;
+      background: #e0e0e0;
+      padding: 20px;
+      height: 100vh;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #232f3e;
+      font-weight: bold;
+    }
+
+    article {
+      float: left;
+      width: 75%;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      background-color: #232f3e;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+
+      nav {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Containerization 101</h1>
+  <p>Learn Docker, Kubernetes, and more!</p>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">What is Docker?</a></li>
+      <li><a href="#">Kubernetes Basics</a></li>
+      <li><a href="#">YAML Files</a></li>
+      <li><a href="#">Container vs VM</a></li>
+      <li><a href="#">Free Resources</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h2>Welcome to Containerization!</h2>
+    <p>Containerization is revolutionizing the way we build and deploy applications. Whether you're a beginner or looking to enhance your skills, this platform will guide you through essential tools like Docker and Kubernetes.</p>
+    <p>Explore tutorials, concepts, and hands-on projects that prepare you for real-world DevOps practices.</p>
+  </article>
+</section>
+
+<footer>
+  <p>© 2025 Containerization101 | Powered by DevOps Learners</p>
+</footer>
+
+</body>
+</html>
